@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-300 min-h-screen container mx-auto">
+    <div class="min-h-screen container mx-auto flex flex-col items-center justify-center bg-blue-700">
+    
+    <div class="title">
+    <h1 class="text-6xl font-light my-4">To Do List for 1/20/22 </h1>
+    </div>
+
+    <div class="form w-full my-8">
+    <form id="addForm" class="flex">
+    <input id="newTodo" type="text" class="flex-grow px-4 rounded-l" placeholder="New To Do" />
+    <button class="bg-yellow-500 text-white py-2 px-4 rounded-r hover:bg-yellow-700">Add</button>
+    </form>
+    </div>
+    <div id="todos" class="w-1/2 space-y-8 my-4">
+    <div>
+    <h3 class="text-2xl text-red-600">Pending Items</h3>
+    <ul id="pendingList"class="space-y-4">
+      
+    </ul>
+    </div>
+    <div>
+    <h3 class="text-2xl text-green-600">Completed Items</h3>
+    <ul id="completedList"class="space-y-4">
+       
+    </ul>
+    </div>
+    </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
